@@ -18,11 +18,11 @@ npm run serve
 ## Build
 
 ```sh
-netlify build --message "My awesome build!"
+netlify build
 ```
 
 ## Deploy
 
 ```sh
-netlify deploy --prod
+netlify deploy --prod --message "My awesome build
 ```
