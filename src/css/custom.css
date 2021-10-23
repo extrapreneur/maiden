@@ -1,4 +1,7 @@
-/********** common setting **********/
+body {
+    width: 100vw;
+}
+
 h2 {
     font-size: 2.8rem !important;
     font-weight: 700;
