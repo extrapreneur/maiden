@@ -3,7 +3,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const isProduction = process.env.NODE_ENV == 'production';
 
 
@@ -12,9 +12,13 @@ const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader
 
 
 const config = {
-    entry: './js/index.js',
-    output: {
-        path: path.resolve(__dirname, 'dist'),
+    entry: './src/js/index.js',
+    output:{
+        filename: 'bundle.[contenthash].js',
+        path: path.resolve(__dirname,'./dist'),
+        publicPath:'',
+        clean: true,
+        assetModuleFilename: '[name][ext]'
     },
     devServer: {
         open: true,
@@ -22,7 +26,14 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'index.html',
+            template: 'src/index.html',
+            favicon: 'src/favicon.ico'
+        }),
+
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'src/img', to: 'img'},
+            ]
         }),
 
         // Add your plugins here
