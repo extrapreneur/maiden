@@ -17,12 +17,16 @@ npm run serve
 ```
 ## Build
 
+1. Build static files
+
 ```sh
 netlify build
 ```
 
-## Deploy
+2. Deploy directly to production
+
+## Deploy to [maiden.ga](https://maiden.ga)
 
 ```sh
-netlify deploy --prod --message "My awesome build
+netlify deploy --prod --message "My awesome build"
 ```
