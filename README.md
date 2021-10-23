@@ -17,7 +17,7 @@ npm run serve
 ## Build
 
 ```sh
-netlify build --message "Daily build"
+netlify build --message "My awesome build!"
 ```
 
 ## Deploy
