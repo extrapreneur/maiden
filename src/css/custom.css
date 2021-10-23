@@ -1,5 +1,5 @@
-body {
-    width: 100vw;
+* {
+  outline: 1px solid #f00 !important;
 }
 
 h2 {

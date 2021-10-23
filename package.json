@@ -35,5 +35,8 @@
   "bugs": {
     "url": "https://github.com/extrapreneur/maiden/issues"
   },
-  "homepage": "https://github.com/extrapreneur/maiden#readme"
+  "homepage": "https://github.com/extrapreneur/maiden#readme",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }
