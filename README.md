@@ -31,8 +31,16 @@ npm run serve
    netlify build
    ```
 
-2. Deploy to [maiden.ga](https://maiden.ga)
+2. Continous deploy and view a draft
 
    ```sh
-   netlify deploy --prod --message "My awesome build"
+   netlify deploy 
    ```
+
+## Production build
+
+Deploy to [maiden.ga](https://maiden.ga)
+
+```sh
+netlify deploy --prod --message "My awesome build"
+```
